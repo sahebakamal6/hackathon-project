@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <!-- Boxicon Link  -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tailwind CDN  -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body>
+    <!-- Header  -->
+        <header class="nav-container">
+            <nav class="logo">
+                <img src="/images/s.klogo.png" alt="logo" width="50" height="50">
+            </nav>
+            <nav class="buttons">
+            <button id="sign-btn"><a href="/firebase/signup.html">Sign Up</a></button>
+            <button id="login-btn"><a href="/firebase/login.html">Log in</a></button>
+            </nav>
+        </header>
+<!-- Section  -->
+    <section id="categories">
+        <div class="box1">
+            <input type="text" id="title" placeholder="Add Title" required>
+            <input type="text" id="description" placeholder="Add Description" required>
+            <input type="text" id="category" placeholder="Add Category" required>
+            <button type="submit" id="add">Add</button>
+        </div>
+        <div class="box2">
+            <button type="submit" id="horror">Horror</button>
+            <button type="submit" id="comedy">Comedy</button>
+            <button type="submit" id="thriller">Thriller</button>
+        </div>
+    </section>
+
+    <!-- Dynamic Card Container  -->
+<div class="d-flex flex-wrap" id="dynamic-cards"></div>
+
+
+
+
+    <script type="module" src="/script.js"></script>
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

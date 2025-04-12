@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 100dvh;
+    width: 100%;
+    background: linear-gradient(to right, rgb(255, 177, 177), rgb(174, 174, 255)
+    );
+}
+
+.nav-container{
+    height: 10dvh;
+    width: 99vw;
+    background-color: rgb(192, 192, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+#sign-btn{
+    padding: .5rem 1.1rem;
+    background-color: rgb(121, 121, 255);
+    color: white;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    border: none;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+#login-btn{
+    padding: .5rem 1.1rem;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    border: 1px solid rgb(121, 121, 255);
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+#sign-btn a{
+    text-decoration: none;
+    color: white;
+}
+
+#sign-btn:hover{
+    border: 1px solid rgb(121, 121, 255);
+    background-color: white;
+}
+
+#sign-btn a:hover{
+    color: black;
+}
+
+#login-btn a:hover{
+    color: white;
+}
+
+#login-btn:hover{
+    border: none;
+    background-color: rgb(121, 121, 255);
+}
+
+#login-btn a{
+    text-decoration: none;
+    color: black;
+}
+
+#categories{
+    margin: 10% 40%;
+}
+
+#categories{
+    height: 90dvh;
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box1{
+    height: 400px;
+    width: 500px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.box1 input{
+    padding: 10px 10px;
+    width: 80%;
+    border: none;
+    margin: auto;
+    background-color: rgba(112, 112, 112, 0.452);
+    border-radius: 5px;
+}
+
+.box1:focus{
+    outline: none;
+}
+
+.box1 button{
+    padding: 10px 20px;
+    width: 80%;
+    margin: auto;
+    background-color: rgb(121, 121, 255);
+    border-radius: 5px;
+    border: none;
+}
+
+.box2{
+    height: 400px;
+    width: 500px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box2 button{
+    padding: 10px 20px;
+    width: 50%;
+    background-color: rgb(121, 121, 255);
+    border-radius: 5px;
+    border: none;
+}
+
+
+#dynamic-cards{
+    margin-left: 5%;
+    height: 10rem;
+    width: 15.5rem;
+    border-radius: 5px;
+    background-color: transparent;
+    position: relative;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    right: 4%;
+    top: 0;
+    cursor: pointer;
+}
+
+.card{
+    background-image: url('https://static.vecteezy.com/system/resources/previews/008/167/404/non_2x/simply-soft-gradation-technology-background-free-vector.jpg');
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    border-radius: 10px;
+    height: auto;
+}
+
+
+.card-body{
+    height: auto;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.105);
+    border: 1px solid black;
+    backdrop-filter: blur(5px);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+}
+
+.card:hover{
+    box-shadow: inset 2px 2px 50px rgba(0, 0, 0, 0.247);
+    transform: translateY(-2%);
+    transition: .3s linear;
+}
+
+.card-body .icon{
+    color: white;
+}
+
+.card-body h4{
+    color: white;
+}
+
+.card-body h5{
+    color: white;
+}
+.card-body h6{
+    color: white;
+}
+.card-body p{
+    color: white;
+}
+
+
+@media screen and (max-width:720px) {
+    .nav-container{
+        height: 10dvh;
+        width: 100vw;
+    }
+    #categories{
+        width: 100vw;
+        flex-direction: column;
+    }
+}
+
