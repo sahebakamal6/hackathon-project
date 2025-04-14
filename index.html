@@ -15,32 +15,115 @@
 </head>
 <body>
     <!-- Header  -->
-        <header class="nav-container">
-            <nav class="logo">
-                <img src="/images/s.klogo.png" alt="logo" width="50" height="50">
-            </nav>
-            <nav class="buttons">
-            <button id="sign-btn"><a href="/firebase/signup.html">Sign Up</a></button>
-            <button id="login-btn"><a href="/firebase/login.html">Log in</a></button>
-            </nav>
-        </header>
+    <header class="nav-container">
+        <nav class="logo">
+            <img src="/images/s.klogo.png" alt="logo" width="40" height="40">
+        </nav>
+        <nav class="buttons">
+            <button id="sign-btn"><a href="/firebase/signup.html" style="text-decoration: none; color: inherit;">Sign Up</a></button>
+            <button id="login-btn"><a href="/firebase/login.html" style="text-decoration: none; color: inherit;">Log in</a></button>
+        </nav>
+    </header>
+    
 <!-- Section  -->
-    <section id="categories">
+<div class="main-container">
+    <div class="input-container">
         <div class="box1">
-            <input type="text" id="title" placeholder="Add Title" required>
-            <input type="text" id="description" placeholder="Add Description" required>
-            <input type="text" id="category" placeholder="Add Category" required>
-            <button type="submit" id="add">Add</button>
+            <input type="text" placeholder="Title" id="title-input">
+            <input type="text" placeholder="Description" id="description-input">
+            <input type="text" placeholder="Category" id="category-input">
+            <button id="add-btn">Add</button>
         </div>
         <div class="box2">
-            <button type="submit" id="horror">Horror</button>
-            <button type="submit" id="comedy">Comedy</button>
-            <button type="submit" id="thriller">Thriller</button>
+            <button class="genre-btn" id="horror-btn">Horror</button>
+            <button class="genre-btn" id="comedy-btn">Comedy</button>
+            <button class="genre-btn" id="thriller-btn">Thriller</button>
         </div>
-    </section>
+    </div>
+    <div id="dynamic-cards"></div>
 
-    <!-- Dynamic Card Container  -->
-<div class="d-flex flex-wrap" id="dynamic-cards"></div>
+    <div class="book-cards">
+        <div class="book-card horror">
+          <h3>The Haunting of Hill House</h3>
+          <p>Author: Shirley Jackson</p>
+        </div>
+        <div class="book-card horror">
+          <h3>The Turn of the Screw</h3>
+          <p>Author: Henry James</p>
+        </div>
+        <div class="book-card horror">
+          <h3>World War Z</h3>
+          <p>Author: Max Brooks</p>
+        </div>
+        <div class="book-card horror">
+          <h3>Coraline</h3>
+          <p>Author: Neil Gaiman</p>
+        </div>
+        <div class="book-card horror">
+          <h3>Something Wicked</h3>
+          <p>Author: Ray Bradbury</p>
+        </div>
+        <div class="book-card horror">
+          <h3>Mexican Gothic</h3>
+          <p>Author: Silvia Moreno-Garcia</p>
+        </div>
+      
+        <div class="book-card comedy">
+          <h3>Three Men in a Boat</h3>
+          <p>Author: Jerome K. Jerome</p>
+        </div>
+        <div class="book-card comedy">
+          <h3>The Hitchhiker's Guide to the Galaxy</h3>
+          <p>Author: Douglas Adams</p>
+        </div>
+        <div class="book-card comedy">
+          <h3>Good Omens</h3>
+          <p>Author: Terry Pratchett & Neil Gaiman</p>
+        </div>
+        <div class="book-card comedy">
+          <h3>Cold Comfort Farm</h3>
+          <p>Author: Stella Gibbons</p>
+        </div>
+        <div class="book-card comedy">
+          <h3>The Code of the Woosters</h3>
+          <p>Author: P.G. Wodehouse</p>
+        </div>
+        <div class="book-card comedy">
+          <h3>The 100-Year-&nbsp; Old Man</h3>
+          <p>Author: Jonas Jonasson
+        </p>
+        </div>
+      
+        <div class="book-card thriller">
+          <h3>And Then There Were None</h3>
+          <p>Author: Agatha Christie</p>
+        </div>
+        <div class="book-card thriller">
+          <h3>The Girl with the Dragon Tattoo</h3>
+          <p>Author: Stieg Larsson</p>
+        </div>
+        <div class="book-card thriller">
+          <h3>I Am Watching You</h3>
+          <p>Author: Teresa Driscoll</p>
+        </div>
+        <div class="book-card thriller">
+          <h3>The Silent&nbsp;&nbsp; Patient</h3>
+          <p>Author: Alex Michaelides</p>
+        </div>
+        <div class="book-card thriller">
+          <h3>The Da Vinci Code</h3>
+          <p>Author: Dan Brown</p>
+        </div>
+        <div class="book-card thriller">
+          <h3>Before I Go to Sleep</h3>
+          <p>Author: S.J. Watson</p>
+        </div>
+      </div>
+      
+</div>
+  
+  
+
 
 
 
